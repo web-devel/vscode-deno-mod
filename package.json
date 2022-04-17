@@ -1,16 +1,32 @@
 {
-  "name": "deno-modules",
+	"name": "deno-modules",
 	"displayName": "deno-modules",
-	"description": "Helps to work with deno modules.",
+	"description": "Helps to work with Deno modules.",
+	"author": "Vlad Minaev",
+	"license": "MIT",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.66.0"
 	},
+	"galleryBanner": {
+		"color": "#3B3738",
+		"theme": "dark"
+	},
 	"categories": [
 		"Other"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/web-devel/vscode-deno-modules"
+	},
+	"bugs": {
+		"url": "https://github.com/web-devel/vscode-deno-modules/issues"
+	},
+	"keywords": [
+		"deno"
+	],
 	"activationEvents": [
-        "onCommand:deno-modules.helloWorld"
+		"onCommand:deno-modules.helloWorld"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
