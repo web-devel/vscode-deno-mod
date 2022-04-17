@@ -1,7 +1,7 @@
 {
-	"name": "deno-modules",
-	"displayName": "deno-modules",
-	"description": "Helps to work with Deno modules.",
+	"name": "deno-mod",
+	"displayName": "Deno Mod",
+	"description": "Tools to work with Deno modules",
 	"author": "Vlad Minaev",
 	"license": "MIT",
 	"version": "0.0.1",
@@ -26,13 +26,13 @@
 		"deno"
 	],
 	"activationEvents": [
-		"onCommand:deno-modules.helloWorld"
+		"onCommand:deno-mod.helloWorld"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "deno-modules.helloWorld",
+				"command": "deno-mod.helloWorld",
 				"title": "Hello World"
 			}
 		]
