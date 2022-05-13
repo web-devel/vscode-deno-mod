@@ -31,7 +31,8 @@
 		"onLanguage:typescriptreact",
 		"onLanguage:javascript",
 		"onLanguage:javascriptreact",
-		"onView:denoModules"
+		"onView:denoModules",
+		"onView:denoInfo"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
@@ -56,6 +57,13 @@
 					"id": "denoModules",
 					"name": "Thirdparty modules",
 					"contextualTitle": "Deno Tirdparty List",
+					"icon": "media/dep.svg"
+				},
+				{
+					"id": "denoInfo",
+					"name": "Deno Info",
+					"contextualTitle": "Deno Info",
+					"type": "webview",
 					"icon": "media/dep.svg"
 				}
 			]
