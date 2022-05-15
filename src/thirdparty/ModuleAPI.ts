@@ -1,14 +1,15 @@
 import fetch from 'node-fetch';
+import * as vscode from 'vscode';
 
 const API_ENDPOINT = "https://api.deno.land/";
 
-export interface Module {
+export interface DenoModuleInfo {
     name: string;
     description: string;
     star_count: string;
   }
   
-export interface SearchResult extends Module {
+export interface SearchResult extends DenoModuleInfo {
     search_score: string;
 }
   
@@ -52,4 +53,8 @@ export async function fetchModules(
       totalCount: data.data?.total_count,
       results: data.data!.results,
     };
+  }
+
+  export function genModuleLink(name: string) {
+    return vscode.Uri.parse(`https://deno.land/x/${name}`);
   }

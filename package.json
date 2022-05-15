@@ -67,7 +67,13 @@
 					"icon": "media/dep.svg"
 				}
 			]
-		}
+		},
+		"viewsWelcome": [
+			{
+			  "view": "denoModules",
+			  "contents": "Loading modules"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
